@@ -1,0 +1,330 @@
+{
+  "professionals": [
+    {
+      "id": "1",
+      "name": "Aisha Khan",
+      "category": "Hair Stylist",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/47.jpg",
+      "travelMode": "can_travel",
+      "services": [
+        {
+          "id": "hair-1",
+          "name": "Women's Haircut & Blow-Dry",
+          "durationMinutes": 60,
+          "price": 550.00
+        },
+        {
+          "id": "hair-2",
+          "name": "Root Touch-Up & Tone",
+          "durationMinutes": 90,
+          "price": 1200.00
+        },
+        {
+          "id": "hair-3",
+          "name": "Olaplex Treatment",
+          "durationMinutes": 30,
+          "price": 350.00
+        }
+      ],
+      "bio": "Specializing in modern cuts and color. Over 8 years of experience."
+    },
+    {
+      "id": "2",
+      "name": "James Chen",
+      "category": "Barber",
+      "profileImageUrl": "https://randomuser.me/api/portraits/men/76.jpg",
+      "travelMode": "cannot_travel",
+      "services": [
+        {
+          "id": "barber-1",
+          "name": "Classic Men's Haircut",
+          "durationMinutes": 30,
+          "price": 300.00
+        },
+        {
+          "id": "barber-2",
+          "name": "Beard Trim & Shape Up",
+          "durationMinutes": 20,
+          "price": 150.00
+        },
+        {
+          "id": "barber-3",
+          "name": "Haircut & Hot Towel Shave",
+          "durationMinutes": 60,
+          "price": 600.00
+        }
+      ],
+      "bio": "Master barber with a focus on precision and classic styles."
+    },
+    {
+      "id": "3",
+      "name": "Sofia Rossi",
+      "category": "Makeup Artist",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/9.jpg",
+      "travelMode": "can_travel",
+      "services": [
+        {
+          "id": "makeup-1",
+          "name": "Natural Day Makeup",
+          "durationMinutes": 45,
+          "price": 800.00
+        },
+        {
+          "id": "makeup-2",
+          "name": "Bridal Makeup Trial",
+          "durationMinutes": 90,
+          "price": 1500.00
+        },
+        {
+          "id": "makeup-3",
+          "name": "Evening Glam Makeup",
+          "durationMinutes": 60,
+          "price": 1100.00
+        }
+      ],
+      "bio": "Creating flawless looks for your most important days."
+    },
+    {
+      "id": "4",
+      "name": "David Singh",
+      "category": "Massage Therapist",
+      "profileImageUrl": "https://randomuser.me/api/portraits/men/30.jpg",
+      "travelMode": "cannot_travel",
+      "services": [
+        {
+          "id": "massage-1",
+          "name": "Swedish Relaxation Massage (60min)",
+          "durationMinutes": 60,
+          "price": 2000.00
+        },
+        {
+          "id": "massage-2",
+          "name": "Deep Tissue Therapy (90min)",
+          "durationMinutes": 90,
+          "price": 2800.00
+        }
+      ],
+      "bio": "Helping you unwind and relieve muscle tension."
+    },
+    {
+      "id": "5",
+      "name": "Maria Garcia",
+      "category": "Nail Technician",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/66.jpg",
+      "travelMode": "can_travel",
+      "services": [
+        {
+          "id": "nails-1",
+          "name": "Gel Manicure",
+          "durationMinutes": 60,
+          "price": 450.00
+        },
+        {
+          "id": "nails-2",
+          "name": "Spa Pedicure",
+          "durationMinutes": 75,
+          "price": 600.00
+        },
+        {
+          "id": "nails-3",
+          "name": "Acrylic Nail Full Set",
+          "durationMinutes": 90,
+          "price": 900.00
+        }
+      ],
+      "bio": "Expert in nail art and long-lasting manicures."
+    },
+    {
+      "id": "6",
+      "name": "Lena Petrova",
+      "category": "Esthetician",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/22.jpg",
+      "travelMode": "can_travel",
+      "services": [
+        {
+          "id": "skin-1",
+          "name": "Custom Facial",
+          "durationMinutes": 60,
+          "price": 1000.00
+        },
+        {
+          "id": "skin-2",
+          "name": "Chemical Peel",
+          "durationMinutes": 45,
+          "price": 1400.00
+        },
+        {
+          "id": "skin-3",
+          "name": "Microdermabrasion",
+          "durationMinutes": 75,
+          "price": 1800.00
+        }
+      ],
+      "bio": "Skincare specialist focused on healthy, glowing skin."
+    },
+    {
+      "id": "7",
+      "name": "Raj Patel",
+      "category": "Hair Stylist",
+      "profileImageUrl": "https://randomuser.me/api/portraits/men/33.jpg",
+      "travelMode": "can_travel",
+      "services": [
+        {
+          "id": "hair-4",
+          "name": "Men's Precision Cut & Style",
+          "durationMinutes": 45,
+          "price": 400.00
+        },
+        {
+          "id": "hair-5",
+          "name": "Balayage Highlights",
+          "durationMinutes": 180,
+          "price": 2500.00
+        },
+        {
+          "id": "hair-6",
+          "name": "Keratin Smoothing Treatment",
+          "durationMinutes": 150,
+          "price": 3000.00
+        }
+      ],
+      "bio": "Trend-forward stylist with expertise in color correction and texture."
+    },
+    {
+      "id": "8",
+      "name": "Chloe Dubois",
+      "category": "Makeup Artist",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/12.jpg",
+      "travelMode": "can_travel",
+      "services": [
+        {
+          "id": "makeup-4",
+          "name": "Photoshoot Makeup",
+          "durationMinutes": 90,
+          "price": 1800.00
+        },
+        {
+          "id": "makeup-5",
+          "name": "Bridal Party Makeup",
+          "durationMinutes": 60,
+          "price": 1300.00
+        },
+        {
+          "id": "makeup-6",
+          "name": "Makeup Lesson & Style",
+          "durationMinutes": 120,
+          "price": 2000.00
+        }
+      ],
+      "bio": "Passionate about empowering clients through transformative makeup artistry."
+    },
+    {
+      "id": "9",
+      "name": "Marcus Wright",
+      "category": "Barber",
+      "profileImageUrl": "https://randomuser.me/api/portraits/men/44.jpg",
+      "travelMode": "cannot_travel",
+      "services": [
+        {
+          "id": "barber-4",
+          "name": "Fades & Designs",
+          "durationMinutes": 40,
+          "price": 350.00
+        },
+        {
+          "id": "barber-5",
+          "name": "Hot Lather Shave",
+          "durationMinutes": 30,
+          "price": 250.00
+        },
+        {
+          "id": "barber-6",
+          "name": "Kids' Haircut",
+          "durationMinutes": 25,
+          "price": 200.00
+        }
+      ],
+      "bio": "Creative barber known for sharp fades and personalized designs."
+    },
+    {
+      "id": "10",
+      "name": "Yuki Tanaka",
+      "category": "Massage Therapist",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/52.jpg",
+      "travelMode": "can_travel",
+      "services": [
+        {
+          "id": "massage-3",
+          "name": "Thai Yoga Massage (75min)",
+          "durationMinutes": 75,
+          "price": 2200.00
+        },
+        {
+          "id": "massage-4",
+          "name": "Prenatal Massage (60min)",
+          "durationMinutes": 60,
+          "price": 1900.00
+        }
+      ],
+      "bio": "Integrative therapist blending Eastern and Western techniques."
+    },
+    {
+      "id": "11",
+      "name": "Isabella Clarke",
+      "category": "Nail Technician",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/35.jpg",
+      "travelMode": "cannot_travel",
+      "services": [
+        {
+          "id": "nails-4",
+          "name": "Dip Powder Manicure",
+          "durationMinutes": 60,
+          "price": 500.00
+        },
+        {
+          "id": "nails-5",
+          "name": "French Tips & Gel",
+          "durationMinutes": 70,
+          "price": 550.00
+        },
+        {
+          "id": "nails-6",
+          "name": "Nail Art Design (Single)",
+          "durationMinutes": 15,
+          "price": 100.00
+        }
+      ],
+      "bio": "Detail-oriented technician with a flair for creative nail art."
+    },
+    {
+      "id": "12",
+      "name": "Elena Fernandez",
+      "category": "Hair Stylist",
+      "profileImageUrl": "https://randomuser.me/api/portraits/women/77.jpg",
+      "travelMode": "cannot_travel",
+      "services": [
+        {
+          "id": "hair-7",
+          "name": "Brazilian Blowout",
+          "durationMinutes": 180,
+          "price": 3500.00
+        },
+        {
+          "id": "hair-8",
+          "name": "Updo & Styling",
+          "durationMinutes": 90,
+          "price": 1200.00
+        },
+        {
+          "id": "hair-9",
+          "name": "Scalp Treatment & Massage",
+          "durationMinutes": 60,
+          "price": 800.00
+        }
+      ],
+      "bio": "Luxury hair care specialist with a focus on health and shine."
+    }
+  
+  
+  ]
+}
