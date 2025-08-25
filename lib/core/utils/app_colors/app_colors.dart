@@ -5,4 +5,5 @@ class AppColors {
   final HexColor whiteColor = HexColor("#ffffff");
   final HexColor blackColor = HexColor("#000000");
   final HexColor greyColor = HexColor("#808080");
+  final shimmerContainerColor = HexColor('#BDBDBD33');
 }

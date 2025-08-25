@@ -1,7 +1,6 @@
 import 'package:bookify/core/services/professionals_repository.dart';
 import 'package:bookify/models/filter_state.dart';
 import 'package:bookify/models/professional_model.dart';
-
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod/legacy.dart';
 

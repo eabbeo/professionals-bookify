@@ -13,7 +13,6 @@ class ProfessionalsScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ProfessionalFilteringAppbar(),
-
           Expanded(child: ProfessionalListScreen()),
         ],
       ),
