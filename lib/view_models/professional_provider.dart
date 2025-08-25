@@ -35,7 +35,6 @@ class FilterStateNotifier extends StateNotifier<FilterState> {
   }
 }
 
-// Provider that fetches the list of professionals (handles loading/error states)
 final professionalsListProvider = FutureProvider<List<Professional>>((
   ref,
 ) async {
@@ -43,32 +42,26 @@ final professionalsListProvider = FutureProvider<List<Professional>>((
   return await repository.fetchProfessionals();
 });
 
-// Provider that combines the raw list with filters to produce the final UI list
 final filteredProfessionalsProvider = Provider<List<Professional>>((ref) {
   final filterState = ref.watch(filterStateProvider);
   final professionalsAsync = ref.watch(professionalsListProvider);
 
   return professionalsAsync.maybeWhen(
     data: (professionals) {
-      // Apply filters to the entire LIST of professionals
-      return professionals.where(
-        (professional) {
-          // Filter by category
-          final categoryMatch =
-              filterState.category == 'All' ||
-              professional.category == filterState.category;
-          // Filter by max price (check if ANY service is below the max price)
-          final priceMatch = professional.services.any(
-            (service) => service.price <= filterState.maxPrice,
-          );
-          // Filter by travel mode
-          final travelMatch =
-              !filterState.canTravel || professional.canTravel == 'can_travel';
+      return professionals.where((professional) {
+        final categoryMatch =
+            filterState.category == 'All' ||
+            professional.category == filterState.category;
+        final priceMatch = professional.services.any(
+          (service) => service.price <= filterState.maxPrice,
+        );
+        // Filter by travel mode
+        final travelMatch =
+            !filterState.canTravel || professional.canTravel == 'can_travel';
 
-          return categoryMatch && priceMatch && travelMatch;
-        },
-      ).toList(); // This .toList() converts the filtered Iterable back to a List
+        return categoryMatch && priceMatch && travelMatch;
+      }).toList();
     },
-    orElse: () => [], // Return empty list if still loading or in error state
+    orElse: () => [],
   );
 });
