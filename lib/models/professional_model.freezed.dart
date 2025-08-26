@@ -287,8 +287,7 @@ as double,
 /// @nodoc
 mixin _$Professional {
 
- String get id; String get name; String get category; String get profileImageUrl;// @JsonKey(name: 'profileImageUrl') String? imageUrl,
-@JsonKey(name: 'travelMode') String get canTravel; List<Service> get services; String get bio;
+ String get id; String get name; String get category; String get profileImageUrl;@JsonKey(name: 'travelMode') String get canTravel; List<Service> get services; String get bio;
 /// Create a copy of Professional
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -495,7 +494,6 @@ class _Professional implements Professional {
 @override final  String name;
 @override final  String category;
 @override final  String profileImageUrl;
-// @JsonKey(name: 'profileImageUrl') String? imageUrl,
 @override@JsonKey(name: 'travelMode') final  String canTravel;
  final  List<Service> _services;
 @override List<Service> get services {

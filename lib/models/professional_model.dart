@@ -25,8 +25,6 @@ abstract class Professional with _$Professional {
     required String name,
     required String category,
     required String profileImageUrl,
-    
-    // @JsonKey(name: 'profileImageUrl') String? imageUrl,
     @JsonKey(name: 'travelMode') required String canTravel,
     required List<Service> services,
     required String bio,

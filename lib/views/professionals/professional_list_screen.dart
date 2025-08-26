@@ -1,4 +1,3 @@
-import 'package:bookify/core/theme/theme_config.dart';
 import 'package:bookify/core/utils/app_animations/app_animations.dart';
 import 'package:bookify/core/utils/app_butons/active_button.dart';
 import 'package:bookify/core/utils/app_colors/app_colors.dart';
