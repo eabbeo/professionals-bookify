@@ -4,6 +4,7 @@ import 'package:bookify/core/utils/app_font_size/app_font_size.dart';
 import 'package:bookify/core/utils/app_images/app_images.dart';
 import 'package:bookify/core/utils/app_sizebox/app_sizebox.dart';
 import 'package:bookify/core/utils/app_string_constants/app_string_constant.dart';
+import 'package:bookify/view_models/global_provider.dart';
 import 'package:bookify/view_models/professional_provider.dart';
 import 'package:bookify/views/bookings/books_screen.dart';
 import 'package:bookify/widgets/profession_container_widget.dart';
@@ -161,7 +162,6 @@ class _ProfessionalDetialsScreenState
                       padding: const EdgeInsets.only(left: 8.0, right: 8.0),
                       child: Container(
                         width: screenSize.width,
-                        // height: 150,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(
                             AppFontSize.fontSize8,
@@ -190,6 +190,14 @@ class _ProfessionalDetialsScreenState
                                       setState(() {
                                         selectedService = index;
                                       });
+                                      ref
+                                              .read(
+                                                selectedSeriveceProvider
+                                                    .notifier,
+                                              )
+                                              .state =
+                                          selectedService!;
+
                                       timeSlotModal(context);
                                     },
                                     child: Text('Select Time'),
@@ -207,6 +215,9 @@ class _ProfessionalDetialsScreenState
                             setState(() {
                               selectedService = index;
                             });
+                            ref.read(selectedSeriveceProvider.notifier).state =
+                                selectedService!;
+
                             timeSlotModal(context);
                           },
                         ),

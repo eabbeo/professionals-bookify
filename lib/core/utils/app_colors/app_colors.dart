@@ -8,4 +8,5 @@ class AppColors {
   final HexColor shimmerContainerColor = HexColor('#BDBDBD33');
   final HexColor redColor = HexColor("#FF0000");
   final HexColor dropBackFilterColor = HexColor('#E3E8EC');
+  final HexColor greenColor = HexColor("#008000");
 }

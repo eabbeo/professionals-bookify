@@ -10,7 +10,7 @@ import 'package:flutter/services.dart';
 class TimeSlotsRepository {
   Future<List<Slot>> fetchTimeSlots() async {
     final jsonString = await rootBundle.loadString(
-      'assetss/data/time_slots.json',
+      'assets/data/time_slots.json',
     );
     final jsonMap = json.decode(jsonString) as Map<String, dynamic>;
     final timeSlotList = jsonMap['timeSlots'] as List<dynamic>;

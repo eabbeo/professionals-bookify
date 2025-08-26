@@ -2,6 +2,7 @@ import 'package:bookify/core/utils/app_animations/app_animations.dart';
 import 'package:bookify/core/utils/app_butons/active_button.dart';
 import 'package:bookify/core/utils/app_colors/app_colors.dart';
 import 'package:bookify/core/utils/app_font_size/app_font_size.dart';
+import 'package:bookify/view_models/global_provider.dart';
 import 'package:bookify/views/professionals/professional_detiails/professional_detials_screen.dart';
 import 'package:bookify/widgets/card_list/card_list_widget.dart';
 import 'package:bookify/widgets/custom_message_widget/custom_message_widget.dart';
@@ -51,13 +52,16 @@ class ProfessionalListScreen extends ConsumerWidget {
               final professional = filteredProfessionals[index];
 
               return GestureDetector(
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) =>
-                        ProfessionalDetialsScreen(selectedIndex: index),
-                  ),
-                ),
+                onTap: () {
+                  ref.read(selectedProfessionalProvider.notifier).state = index;
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          ProfessionalDetialsScreen(selectedIndex: index),
+                    ),
+                  );
+                },
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

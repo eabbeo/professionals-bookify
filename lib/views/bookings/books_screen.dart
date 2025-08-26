@@ -1,9 +1,12 @@
 import 'package:bookify/core/theme/theme_config.dart';
 import 'package:bookify/core/utils/app_animations/app_animations.dart';
 import 'package:bookify/core/utils/app_butons/active_button.dart';
+import 'package:bookify/core/utils/app_colors/app_colors.dart';
 import 'package:bookify/core/utils/app_font_size/app_font_size.dart';
 import 'package:bookify/view_models/time_slots_provider.dart';
+import 'package:bookify/views/bookings/booking_confirmation_screen.dart';
 import 'package:bookify/widgets/custom_message_widget/custom_message_widget.dart';
+import 'package:bookify/widgets/custom_toast/custom_toast.dart';
 import 'package:choice/choice.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -41,6 +44,7 @@ class _BooksScreenState extends ConsumerState<BooksScreen> {
         padding: const EdgeInsets.all(AppFontSize.fontSize12),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          spacing: AppFontSize.fontSize12,
           children: [
             Text('Choose a time', style: theme().textTheme.displaySmall),
             Expanded(
@@ -72,7 +76,22 @@ class _BooksScreenState extends ConsumerState<BooksScreen> {
               child: ActiveButton(
                 buttonText: 'Continue',
                 keyText: null,
-                onPressed: () {},
+                onPressed: () {
+                  selectedValue.isEmpty
+                      ? appToast(
+                          context,
+                          'Caution',
+                          'Please select a time slot',
+                          AppColors().redColor,
+                          Icons.stop_circle_outlined,
+                        )
+                      : Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => BookingConfirmationScreen(),
+                          ),
+                        );
+                },
               ),
             ),
           ],
