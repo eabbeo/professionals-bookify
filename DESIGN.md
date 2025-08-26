@@ -74,3 +74,7 @@
 ### 7. Todos 
 - Write widgets test
 
+### 8 Test
+- Unit test
+  flutter test test/unit/filter_state_notifier_test.dart
+  
