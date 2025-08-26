@@ -31,28 +31,11 @@ class ProfessionalFilteringAppbar extends ConsumerWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Welcome and Search
-            Text('Welcome Edward', style: theme().textTheme.displayMedium),
-            const SizedBox(height: 12),
-            // SizedBox(
-            //   height: 44,
-            //   child: TextFormField(
-            //     decoration: InputDecoration(
-            //       filled: true,
-            //       fillColor: AppColors().whiteColor,
-            //       prefixIcon: Icon(
-            //         Icons.search,
-            //         color: AppColors().primaryColor,
-            //       ),
-            //       hintText: 'Search for professionals',
-            //       border: OutlineInputBorder(
-            //         borderRadius: BorderRadius.circular(35),
-            //         borderSide: BorderSide.none,
-            //       ),
-            //     ),
-            //   ),
-            // ),
             const SizedBox(height: 16),
+
+            Text('Welcome Edward', style: theme().textTheme.displayMedium),
+
+            const SizedBox(height: 12),
 
             // Filter Chips Row
             SingleChildScrollView(
@@ -71,7 +54,7 @@ class ProfessionalFilteringAppbar extends ConsumerWidget {
 
                   // Max Price Filter
                   _FilterChip(
-                    label: 'Max: R${filterState.maxPrice.toInt()}',
+                    label: 'Max: ${filterState.maxPrice.toInt()}',
                     icon: Icons.attach_money,
                     onTap: () {
                       showModalBottomSheet(
@@ -164,7 +147,7 @@ class _FilterChip extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         decoration: BoxDecoration(
-          color: AppColors().whiteColor.withOpacity(0.9),
+          color: AppColors().whiteColor.withValues(alpha: 0.9),
           borderRadius: BorderRadius.circular(20),
         ),
         child: Row(

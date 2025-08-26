@@ -6,7 +6,7 @@ import 'package:bookify/core/utils/app_sizebox/app_sizebox.dart';
 import 'package:bookify/core/utils/app_string_constants/app_string_constant.dart';
 import 'package:bookify/view_models/global_provider.dart';
 import 'package:bookify/view_models/professional_provider.dart';
-import 'package:bookify/views/bookings/books_screen.dart';
+import 'package:bookify/views/bookings/booking_screen.dart';
 import 'package:bookify/widgets/profession_container_widget.dart';
 import 'package:bookify/widgets/shimer_loadings/shimmer_card_widget.dart';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -40,7 +40,7 @@ class _ProfessionalDetialsScreenState
         isDismissible: true,
         context: context,
         builder: (BuildContext context) {
-          return const BooksScreen();
+          return const BookingScreen();
         },
       );
     }

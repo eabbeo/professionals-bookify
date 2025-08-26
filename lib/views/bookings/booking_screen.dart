@@ -11,14 +11,14 @@ import 'package:choice/choice.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class BooksScreen extends ConsumerStatefulWidget {
-  const BooksScreen({super.key});
+class BookingScreen extends ConsumerStatefulWidget {
+  const BookingScreen({super.key});
 
   @override
-  ConsumerState<BooksScreen> createState() => _BooksScreenState();
+  ConsumerState<BookingScreen> createState() => _BookingScreenState();
 }
 
-class _BooksScreenState extends ConsumerState<BooksScreen> {
+class _BookingScreenState extends ConsumerState<BookingScreen> {
   List<String> selectedValue = [];
 
   void setSelectedValue(List<String> value) {

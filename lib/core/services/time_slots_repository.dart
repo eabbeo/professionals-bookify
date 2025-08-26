@@ -3,9 +3,6 @@ import 'dart:convert';
 import 'package:bookify/models/time_slots_model.dart';
 import 'package:flutter/services.dart';
 
-import 'dart:convert';
-import 'package:bookify/models/time_slots_model.dart';
-import 'package:flutter/services.dart';
 
 class TimeSlotsRepository {
   Future<List<Slot>> fetchTimeSlots() async {

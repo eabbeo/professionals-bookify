@@ -22,7 +22,7 @@ class PriceFilterBottomSheet extends ConsumerWidget {
           ),
           const SizedBox(height: 16),
           Text(
-            'R ${maxPrice.toStringAsFixed(0)}',
+            '\$ ${maxPrice.toStringAsFixed(0)}',
             style: Theme.of(context).textTheme.headlineSmall,
           ),
           const SizedBox(height: 8),
@@ -31,7 +31,7 @@ class PriceFilterBottomSheet extends ConsumerWidget {
             min: 0,
             max: 3000,
             divisions: 30,
-            label: 'R ${maxPrice.toStringAsFixed(0)}',
+            label: '\$${maxPrice.toStringAsFixed(0)}',
             onChanged: (value) {
               ref.read(filterStateProvider.notifier).setMaxPrice(value);
             },

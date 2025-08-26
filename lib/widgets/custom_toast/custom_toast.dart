@@ -1,3 +1,5 @@
+// ignore_for_file: strict_top_level_inference
+
 import 'package:bookify/core/utils/app_colors/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';

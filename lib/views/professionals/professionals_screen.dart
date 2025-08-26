@@ -11,12 +11,14 @@ class ProfessionalsScreen extends StatelessWidget {
     return PopScope(
       canPop: false,
       child: Scaffold(
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            ProfessionalFilteringAppbar(),
-            Expanded(child: ProfessionalListScreen()),
-          ],
+        body: SafeArea(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              ProfessionalFilteringAppbar(),
+              Expanded(child: ProfessionalListScreen()),
+            ],
+          ),
         ),
       ),
     );
