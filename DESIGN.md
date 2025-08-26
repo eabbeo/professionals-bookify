@@ -43,6 +43,7 @@
 
 **Feature Boundaries**: Providers organized by feature:
 - `professionalsProvider` - Data repository
+- `timeSlotListProvider` - - Data repository
 - `filterStateProvider` - Filter management
 - `professionalsListProvider` - Async data handling
 - `filteredProfessionalsProvider` - Computed state
@@ -60,7 +61,6 @@
 **Must communicate**:
 - Booking error (time slot not selected)
 
-
 ### 5. Scalability: Adding authentication & real APIs
 **Changes needed**:
 - **DTOs/Mappers**: Separate API models from domain models
@@ -68,6 +68,8 @@
 - **Layers**: Add API client layer with interceptors for auth
 - **State management**: Auth provider for user session state
 
+### 6. Offline/Latency: Optimistic updates without over-engineering
+- **Simple approach**: `shared_preferences` for caching professional data
 
-### 6. Todos 
+### 7. Todos 
 - Write widgets test
