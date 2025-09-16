@@ -6,7 +6,7 @@ part 'time_slots_model.g.dart';
 @freezed
 abstract class TimeSlots with _$TimeSlots {
   const factory TimeSlots({
-    required List<Slot> timeSlots, // 👈 matches JSON root "timeSlots"
+    required List<Slot> timeSlots,
   }) = _TimeSlots;
 
   factory TimeSlots.fromJson(Map<String, dynamic> json) =>
